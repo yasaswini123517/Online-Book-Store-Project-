@@ -1,1 +1,1 @@
-# Online-Book-Store-Project-
+Developed a static e-commerce website using HTML and CSS. The site includes a product catalogue with search functionality and category filters. Focused on designing a clean, user-friendly interface to enhance the browsing experience, without incorporating server-side functionality.
