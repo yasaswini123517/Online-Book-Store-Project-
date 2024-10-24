@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <style>
+        /* Basic CSS styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .product-container {
+            text-align: center;
+            max-width: 800px; /* Adjust the maximum width here */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .product-img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .btn-container {
+            margin-top: 10px;
+        }
+
+        .btn {
+            padding: 8px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .btn-secondary {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* Styling for back button */
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="product-container">
+    <img src="book_1.jpg" alt="Product Image" class="product-img" style="width: 200px;"> <!-- Adjust width here -->
+    <p class="price">$20</p>
+    <div class="btn-container">
+        <button class="btn btn-secondary">Remove</button>
+        <button class="btn btn-secondary">Save for Later</button>
+        <button class="btn btn-primary">Buy Now</button>
+    </div>
+</div>
+
+<!-- Back button -->
+<button class="back-button" onclick="window.history.back()">Back</button>
+
+</body>
+</html>

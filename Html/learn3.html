@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+
+  .container {
+    text-align: center;
+    max-width: 1000px;
+    background-color: #ccffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    margin-bottom: 10px;
+  }
+
+  img {
+    max-width: 1000px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .summary {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .button-container {
+    text-align: center;
+  }
+
+  .button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff0066;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Style for back button */
+  .back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .back-button:hover {
+    background-color: #555;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>CocoGoose</h1>
+  <img src="book_1.jpg" alt="Book Image">
+  <div class="summary">
+    <p>Summary of the book goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla neque eu lorem tempor, at mollis justo fermentum. Nullam nec dapibus enim.
+If the article takes a different form, you might have to think more carefully about what points are most important for the reader to understand its argument.
+
+In that case, pay particular attention to the thesis statement—the central claim that the author wants us to accept, which usually appears in the introduction—and the topic sentences that signal the main idea of each paragraph.</p>
+  </div>
+  <div class="button-container">
+    <a href="atc1.html" class="button">Add to Cart</a>
+    <button class="button">Buy Now</button>
+  </div>
+</div>
+
+<!-- Back button -->
+<button class="back-button" onclick="window.history.back()">Back</button>
+
+</body>
+</html>

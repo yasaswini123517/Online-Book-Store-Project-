@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <style>
+        /* Basic CSS styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .book-details {
+            max-width: 600px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .book-image {
+            max-width: 50%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .summary {
+            display: none;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .btn-secondary {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* Positioning for back button */
+        .back-button {
+            background-color: #555;
+            color: white;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 9999; /* Ensure it's above other content */
+        }
+    </style>
+</head>
+<body>
+
+<div class="book-details">
+    <img src="arrival_1.jpg" alt="Book Image" class="book-image">
+    <h2>THE GIVER</h2>
+    <p>Author: LOUIS LOWRY</p>
+    <button class="btn btn-primary" onclick="toggleSummary()">Learn More</button>
+    <button class="btn btn-secondary">Buy Now</button>
+    <button class="btn btn-secondary">Add to Cart</button>
+    <div class="summary">
+        <h3>Summary</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum tortor et velit interdum, vel consequat lacus tempor. Ut scelerisque lectus in enim consectetur, et tincidunt arcu venenatis. Donec ac arcu id ex laoreet dictum sed id neque. Proin nec purus vitae lorem malesuada accumsan non at elit. In hac habitasse platea dictumst. Sed eget libero lectus. Mauris non vehicula velit, in commodo lorem. Aliquam nec ex id odio mollis vehicula. Ut commodo eros at feugiat consectetur. Suspendisse potenti. Nulla facilisi.
+        </p>
+    </div>
+</div>
+
+<!-- Back button -->
+<button class="back-button" onclick="window.history.back()">Back</button>
+
+<script>
+    function toggleSummary() {
+        var summary = document.querySelector('.summary');
+        if (summary.style.display === "none") {
+            summary.style.display = "block";
+        } else {
+            summary.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
